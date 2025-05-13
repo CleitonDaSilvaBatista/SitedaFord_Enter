@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Genora';
+    src: url('GenoraSansRegular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 0;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    font-family: 'Genora', Times, serif;
+    text-align: center;
+    color: #1b357e;
+}
+footer{
+    background-color: #1b357e;
+    height: 10%;
+    font-family: 'Genora', Times, serif;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+}
+.container iframe{
+    float: right; 
+    margin-left: 20px; 
+}
+.fordlogosup{
+    width: 150px;
+    height: 70%;
+    padding: 0px;
+}
+.navegacao{
+    text-align: center;
+    transform: translateY(-200%);
+    font-family: 'Genora', Times, serif;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+a { color: #0051ff; 
+    text-decoration-color: none;
+    text-decoration: none;
+    transform: translateY(30%);
+}
+
+.storm3{
+    height: 50%;
+    width: 250px;
+}
+
+.logoinf{
+    transform: translateY(50%);
+    margin-left: 20px;
+}
+.texto{
+    text-align: center;
+    transform: translateY(150%);
+}
+table{
+  margin: 0 auto;
+  border-spacing: 10px;
+}
+.color-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2px;
+}
+.color-option {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #00000056;
+}
+.color-option.selected {
+    border: 1px solid #00000069;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.container {
+    text-align: center;
+}
+img {
+    width: 80%;
+    max-width: 600px;
+}
+@media (max-width: 960px) {
+    .container iframe {
+        width: 100%;
+        height: 250px;
+        float: none; 
+        margin: 0 auto;
+        display: block;
+    }
+
+    
+    main h1 {
+        font-size: 18px;
+    }
+    header{
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 0;
+        width: 100%;
+    }
+
+    .logoinf {
+        transform: translateY(0);
+    }
+
+    .texto {
+        transform: translateY(0);
+    }
+    table {
+        width: 90%;
+        font-size: 14px;
+    }
+    .navegacao{
+      font-size: 14px;
+      display: flex;
+      gap: 15px;
+      transform: translateX(-1%);
+      width: 100%;
+    }
+    .fordlogosup{
+        width: 90px;
+    }
+
+}

@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Genora';
+    src: url('GenoraSansRegular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    font-family: 'Genora', Times, serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+.fordlogo{
+    margin-right: auto;
+    width: 160px;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Genora', Times, serif;
+}
+label, textarea {
+    display: block;
+    
+  }
+  textarea {
+    margin: 15px 0;
+    width: 359px;
+    color: #000000;
+    height: 100px;
+    font-family: 'Genora';
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+nav {
+    display: flex;
+    gap: 100px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-60%, 10%);
+    font-family: 'Genora', Times, serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0051ff;
+    font-size: 16px;
+    font-family: 'Genora', Times, serif;
+    transition: font-size 0.3s ease;
+}
+nav a:hover{
+    font-size: 18px;
+}
+
+
+footer {
+    background-color: #1b357e;
+    width: 100%;
+    padding: 0;
+    height: 95px; 
+    color: #ffffff;
+    position: relative;
+    transform: translateY(10%);
+}
+
+.logoinferior {
+    display: block;
+    margin-left: auto;
+    margin-right: 25px;
+    transform: translateY(70%);
+}
+
+.facebook, .instagram, .youtube {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-top: 20px;
+    transform: translateY(-100%);
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.storm2 {
+    height: auto;
+    width: 400px;
+    object-fit: contain;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+a {
+    color: #0051ff;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+.box {
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1b357e;
+    font-family: 'Genora', Times, serif;
+    font-size: 24px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+    background: white;
+    padding: 0 4px;
+}
+
+.form-group input {
+    width: 95%;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    outline: none;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 10px;
+    color: #005eff;
+}
+
+.form-group select {
+    width: 95%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-group select:hover {
+    border-color: #005eff;
+}
+
+.form-group select:focus {
+    border-color: #0046cc;
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(0, 94, 255, 0.5);
+}
+
+.select-container {
+    position: relative;
+    width: 105%;
+}
+
+.select-container::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #555;
+    pointer-events: none;
+}
+#btnEnviar {
+    background-color: #ccc; /* Cinza desabilitado */
+    color: #666;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: not-allowed;
+    transition: all 0.3s ease;
+}
+#btnEnviar:enabled {
+    background-color: #0051ff; /* Azul Ford */
+    color: white;
+    cursor: pointer;
+}
+
+/* Quando passar o mouse com o botão habilitado */
+#btnEnviar:enabled:hover {
+    background-color: #003f7f; /* Azul mais escuro */
+}
+.btnEnviar {
+    width: 100%;
+    background-color: #005eff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btnEnviar:hover {
+    background-color: #0046cc;
+    scale: (0.2);
+}
+
+.menuicone {
+    width: 20%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 960px) {
+    .menuicone {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        transform: translate(-40%, -15%);
+    }
+    nav {
+        position: fixed;
+        top: 2%;
+        left: 60;
+        width: 150%;
+        height: 100vh;
+        background-color: #1b357e;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    nav.ativo {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav a {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+        transform: translateX(10%);
+    }
+    .select-container::after {
+        content: '▼';
+        position: absolute;
+        top: 50%;
+        right: 40px;
+        transform: translateY(-50%);
+        font-size: 12px;
+        color: #555;
+        pointer-events: none;
+    }
+
+    .storm2 {
+        height: auto;
+        width: 70%;
+        transform: translateX(-5%);
+    }
+    .box{
+        width: 70%;
+    }
+    .select-container{
+        width: 103%;
+    }
+    .btnEnviar{
+        width: 107%;
+    }
+    .logoinferior{
+        transform: translate(-25%, 50%);
+    }
+    textarea {
+        margin: 15px 0;
+        width: 275px;
+        height: 100px
+      }
+
+}

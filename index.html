@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="shortcut icon" href="img/ford-6.svg" type="image/x-icon">
+    <title>FORD | HOME</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://www.ford.com.br/"> <img src="img/logo-ford-256.png" class="fordlogo" alt="Logo Ford"></a>
+
+        <!-- Ícone do menu para dispositivos móveis -->
+        <div class="menuicone">
+            <img src="img/menu.png" alt="Ícone do menu">
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="LANÇAMENTO.html">LANÇAMENTO</a>
+            <a href="CONTATO.html">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+
+        <div class="carrossel-container">
+            <div class="carrossel">
+                
+
+                <div class="slide">
+                    <img src="img/ranger black home.jpg" alt="Carro 1">
+                    <div class="legenda">Nova Ford Black, <a href="LANÇAMENTO.html">verifique novidades.</a></div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="img/bronco.jpg" alt="Carro 2">
+                    <div class="legenda">Nova Ford Bronco Sport 2022</div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="img/imagem 2.jpg" alt="Carro 3">
+                    <div class="legenda">Ford a nossa história</div>
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.ford.com.br/"><img src="img/ford-96.png" class="logoinferior" alt="Logo Da Ford"></a>
+        &nbsp; <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR"><img src="img/facebook-50.png" alt="Facebook"
+                class="facebook"></a>
+        &nbsp; <a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="Instagram"
+                class="instagram"></a>
+        &nbsp; <a href="https://www.youtube.com/fordbrasil"><img src="img/youtube-squared-50.png" alt="Youtube"
+                class="youtube"></a>
+    </footer>
+    <script src="js/carosel.js"></script>
+</body>
+
+</html>
