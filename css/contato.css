@@ -261,7 +261,6 @@ a {
 
 .btnEnviar:hover {
     background-color: #0046cc;
-    scale: (0.2);
 }
 
 .menuicone {
@@ -282,7 +281,7 @@ a {
     nav {
         position: fixed;
         top: 2%;
-        left: 60;
+        left: 60%;
         width: 150%;
         height: 100vh;
         background-color: #1b357e;
