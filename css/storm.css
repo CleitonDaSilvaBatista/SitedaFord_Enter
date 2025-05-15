@@ -80,6 +80,10 @@ table{
   margin: 0 auto;
   border-spacing: 10px;
 }
+td{
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
 .color-selector {
     display: flex;
     gap: 10px;
