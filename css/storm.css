@@ -145,7 +145,7 @@ img {
         font-size: 14px;
     }
     .navegacao{
-      font-size: 14px;
+      font-size: 9px;
       display: flex;
       gap: 15px;
       transform: translateX(-1%);
